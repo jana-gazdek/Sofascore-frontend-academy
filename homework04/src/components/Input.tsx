@@ -31,6 +31,8 @@ export default function Input() {
     e.preventDefault() // prevent page changing on submit
     // store new circle in your state and then reset the selector to default radius
     // get your next circle parameters other than radius with `getRandomCircleParameters` method
+    
+    setCircles([...circles, getRandomCircleParameters(currentRadius)])
     setCurrentRadius(DEFAULT_SELECTED_RADIUS)
   }
 
@@ -40,6 +42,7 @@ export default function Input() {
         <label> Radius of next circle: {currentRadius}&nbsp;
         <input
           // add onChange method to this input element, which takes form value and sets it into current radius state
+          onChange={(e) => setCurrentRadius(Number(e.target.value))}
           type="range"
           step="1"
           id="radius"

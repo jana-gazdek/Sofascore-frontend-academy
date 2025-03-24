@@ -20,6 +20,8 @@ export default function Messages() {
     const timer = setTimeout(() => {
       setDisplaySuccess(sendMessage)
     }, 1000)
+
+    return () => clearTimeout(timer)
   }, [sendMessage])
 
   return (
