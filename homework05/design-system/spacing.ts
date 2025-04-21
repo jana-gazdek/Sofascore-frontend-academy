@@ -5,7 +5,7 @@ export const spacing: Tokens["spacing"] = {
   "2xs": { value: "2px" },
   xs: { value: "4px" },
   sm: { value: "8px" },
-  md: { value: "12px" },
+  md: { value: "11px" },
   lg: { value: "16px" },
   xl: { value: "24px" },
   "2xl": { value: "32px" },
