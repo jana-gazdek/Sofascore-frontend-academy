@@ -9,16 +9,17 @@ export const fontSizes: Tokens["fontSizes"] = {
   lg: { value: "1.125rem" }, // 18px
   xl: { value: "1.25rem" }, // 20px
   "2xl": { value: "1.75rem" }, // 28px
+  "3xl": { value: "2.0rem"}, // 32px
 }
 
 export const textStyles = defineTextStyles({
   display: {
     extraLarge: {
       value: {
-        fontSize: "2xl",
-        fontWeight: 700,
-        lineHeight: 1.14,
-        letterSpacing: "-0.14px",
+        fontSize: "3xl",
+        fontWeight: 600,
+        lineHeight: 1.00,
+        letterSpacing: "0px",
       },
     },
     large: {
@@ -66,7 +67,7 @@ export const textStyles = defineTextStyles({
     medium: {
       value: {
         fontSize: "sm",
-        fontWeight: 400,
+        fontWeight: 600,
         lineHeight: 1.14,
         letterSpacing: "-0.028px",
       },
